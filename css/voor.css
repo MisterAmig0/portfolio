@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    height: 90px;
+    background: black;
+}
+
+
+
+.breedte {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding: 20px 0;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.navigatie-menu{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+}
+
+.navigatie-menu a {
+    margin-left: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+}
+
+.navigatie-menu a:hover {
+    background: #fff;
+    color: #2f3640
+    transform scale(1.1);
+}
+
+.navigatie-menu i{
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.home {
+    color: blue;
+}
+
+.about {
+    color: lightblue;
+}
+
+.works {
+    color: red;
+}
+
+.invul {
+    color: lightcoral;
+}
+
+.contact {
+    color: lightsalmon;
+}
+
+.menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #fff;
+    font-size: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .menu-toggle-btn{
+        display: block !important;
+    }
+
+
+    .navigatie-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #172b4d;
+        top: 90px;
+        right: 0;
+        display: block;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .navigatie-menu::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+
+    .navigatie-menu a{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .navigatie-menu.active {
+        display: block;
+    }
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+
+body {
+    background: linear-gradient(120deg, #2980b9, #8e44);
+}
+
+

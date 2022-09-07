@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    background: linear-gradient(120deg, red, blue);
+}
+
+.codeertaal {
+    float: left;
+    margin-left: 13%;
+}
+
+.spreektalen {
+    float: left;
+    margin-left: 13%;   
+}
+
+.sport {
+    float: right;
+    margin-right: 18%;
+    margin-top: -720px;
+}
+
+.hobby {
+    margin-top: -685px;
+    margin-left: 1200px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skills, .talen {
+    width: 100%;
+    max-width: 600px; /* Lengte van de lijntjes*/
+    padding: 0 20px;
+    margin: 50px;
+}
+
+.skill-naam {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 14px;
+    background: silver;
+    border-radius: 3px;
+}
+.skill-per {
+    height: 14px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+}
+
+.skill-per::before {
+    content: attr(per); /* Laat de procenten zien*/
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
